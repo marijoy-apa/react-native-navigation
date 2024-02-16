@@ -6,7 +6,7 @@ import _ from 'lodash'
 import ListItem from "./ListItem";
 
 class EmployeeList extends Component {
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.props.employeesFetch();
         console.log(this.props.employees)
 

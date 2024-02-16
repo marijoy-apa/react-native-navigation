@@ -27,9 +27,9 @@ class App extends Component {
         return (
             <Provider store={createStore(reducers, {},
                 applyMiddleware(thunk))}>
-                <Header headerText="a" />
+                <View>
+                </View>
                 <RouterComponent />
-                {/* <LoginForm/> */}
             </Provider>
         )
     }

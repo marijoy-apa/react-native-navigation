@@ -9,11 +9,14 @@ import EmployeeEdit from "./components/EmployeeEdit";
 const RouterComponent = () => {
     return (
         <Router sceneStyle={{ paddingTop: 65, alignSelf: "center" }}>
-            <Scene key="root" hideNavBar>
+            <Scene key="root" hideNavBar
+            headerLayoutPreset='center'
+            >
                 <Scene key="auth">
                     <Scene
                         key="login"
                         component={LoginForm}
+                        
                         title="Please login" />
                 </Scene>
 
