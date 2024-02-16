@@ -8,6 +8,7 @@ import reducers from './reducers';
 import { initializeApp } from 'firebase/app';
 import LoginForm from './components/LoginForm';
 import { Header } from './components/common';
+import RouterComponent from './Router';
 class App extends Component {
 
     UNSAFE_componentWillMount() {
@@ -26,8 +27,9 @@ class App extends Component {
         return (
             <Provider store={createStore(reducers, {},
                 applyMiddleware(thunk))}>
-                <Header headerText="sdfsd" />
-                <LoginForm />
+                <Header headerText="a" />
+                <RouterComponent />
+                {/* <LoginForm/> */}
             </Provider>
         )
     }
